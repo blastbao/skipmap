@@ -22,6 +22,7 @@ func fastrandn(n uint32) uint32 {
 	return uint32(uint64(fastrand()) * uint64(n) >> 32)
 }
 
+//
 func randomLevel() int {
 	level := 1
 	for fastrandn(1/p) == 0 {
